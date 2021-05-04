@@ -1,7 +1,10 @@
 // Your code goes here
 
-const navLinks = document.querySelector('.nav-link');
+const header = document.querySelector('.main-navigation');
+const nav = document.querySelector('.nav');
 
-navLinks.setAttribute('hover', function (event) {
-    
+nav.addEventListener('mouseover', (event) => {
+    event.target.style.color = 'coral';
 })
+
+header.addEventListener('')
