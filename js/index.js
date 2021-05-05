@@ -26,13 +26,19 @@ nav.addEventListener('focus', (event) => {
 
 // Text headers manipulation 
 
-const magText = document.querySelector('h2');
+// const magText = document.querySelectorAll('h2');
 
-magText.addEventListener('resize', (event) => {
-    event.target.style.fontSize = "2.2rem";
-});
-magText.addEventListener('mouseleave', (event) => {
-    event.target.style.fontSize = "1.6rem";
-})
+// magText.addEventListener('resize', (event) => {
+//     event.target.style.fontSize = "2.2rem";
+// });
+// magText.addEventListener('resize', (event) => {
+//     event.target.style.fontSize = "1.6rem";
+// })
 // Images manipulation
 
+
+// Wheel event 
+
+document.addEventListener('wheel', (event) => {
+    console.log(`${event} was activated`)
+})
