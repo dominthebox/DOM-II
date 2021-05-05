@@ -1,5 +1,8 @@
 // Your code goes here
 
+
+// Navigation links manipulation
+
 const nav = document.querySelector('.nav');
 
 nav.addEventListener('mouseover', (event) => {
@@ -13,6 +16,23 @@ nav.addEventListener('focus', (event) => {
     event.target.style.background = 'pink';
 }, true);
 
-nav.addEventListener('blur', (event) => {
-    event.target.style.background = '';
-  }, true);
+// nav.addEventListener('blur', (event) => {
+//     event.target.style.background = '';
+//   }, true);
+
+  nav.addEventListener('click', (event) => {
+      event.preventDefault();
+  })
+
+// Text headers manipulation 
+
+const magText = document.querySelector('h2');
+
+magText.addEventListener('resize', (event) => {
+    event.target.style.fontSize = "2.2rem";
+});
+magText.addEventListener('mouseleave', (event) => {
+    event.target.style.fontSize = "1.6rem";
+})
+// Images manipulation
+
